@@ -1,0 +1,30 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+  <br>
+  <h2>{{title}}</h2> <br>
+
+  <div class="mb-5">
+    <app-tooltip [inputText]="tooltipText" direction="top" [type]="'success'"></app-tooltip>
+  </div>
+  <div class="mb-5">
+    <app-tooltip [inputText]="'tooltipText'" [direction]="'bottom'" [type]="'error'"></app-tooltip>
+
+  </div>
+  <div class="mb-5">
+    <app-tooltip [inputText]="'abcsdgyauwdt7'" [direction]="'left'" [type]="'success'"></app-tooltip>
+
+  </div>
+  <div class="mb-5">
+    <div>
+    <app-tooltip [inputText]="'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'" [direction]="'right'" [type]="'success'"></app-tooltip>
+  </div>
+</div>
+<h2>Tooltip Directive</h2>
+<div class="tooltip-example">
+  <div appCustomTooltip="tootip on left" placement="left" delay="500">tootip on left</div>
+  <div appCustomTooltip="tootip on top" placement="top" delay="500">tootip on top</div>
+  <div appCustomTooltip="tootip on bottom" placement="bottom" delay="500">tootip on bottom</div>
+  <div appCustomTooltip="tootip on right" placement="right" delay="500">tootip on right</div>
+</div>
+  <router-outlet></router-outlet>
+</div>
